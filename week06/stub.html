@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CS 213 Week 06 Ponder and Prove</title>
+	<script type="text/javascript" src="week06.js"></script>
+
+    <style type="text/css">
+        form, pre {
+            margin-left: 20px;
+            font-family: Verdana, Geneva, sans-serif;
+            padding: 6px;
+            width: 550px;
+            font-size: 12px;
+            border: 1px solid rgb(0, 90, 136);
+            border-radius: 4px;
+        }
+
+        h2 {
+            border-bottom-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+<!-- First problem: Age -->
+<h2>#1: Age</h2>
+<p>Please indicate your age: 0-118 years</p>
+
+<div>
+    <input type="text" oninput="validateAge(this.value, 'firstAge')" size="3"/>
+    <span class="firstAge" style='color:red'>Invalid age</span>
+</div>
+<div>
+    <input type="text" oninput="validateAge(this.value, 'secondAge')" size="3" />
+    <span class="secondAge" style='color:red'>Invalid age</span>
+</div>
+
+
+<!-- Second problem: SSN -->
+<h2>#2: SSN</h2>
+<p>Please enter a Social Security Number: 000-00-0000</p>
+
+<div>
+    <input type="text" oninput="validateSSN(this.value, 'firstSSN')" size="11"/>
+    <span class="firstSSN" style='color:red'>Invalid SSN</span>
+</div>
+<div>
+    <input type="text" oninput="validateSSN(this.value, 'secondSSN')" size="11"/>
+    <span class="secondSSN" style='color:red'>Invalid SSN</span>
+</div>
+
+
+<!-- Third problem: Credit Card Number -->
+<h2>#3: Credit Card Number</h2>
+<p>Please enter a credit card number: 0000 0000 0000 0000</p>
+
+<div>
+    <input type="text" oninput="validateCard(this.value, 'firstCC')" size="19"/>
+    <span class="firstCC" style='color:red'>Invalid credit card number</span>
+</div>
+<div>
+    <input type="text" oninput="validateCard(this.value, 'secondCC')" size="19"/>
+    <span class="secondCC" style='color:red'>Invalid credit card number</span>
+</div>
+
+
+<!-- Fourth problem: Date -->
+<h2>#4: Date</h2>
+<p>Please enter a date: m/d/yyyy</p>
+
+<div>
+    <input type="text" oninput="validateDate(this.value, 'firstDate')" size="9"/>
+    <span class="firstDate" style='color:red'>Invalid date</span>
+</div>
+<div>
+    <input type="text" oninput="validateDate(this.value, 'secondDate')" size="9"/>
+    <span class="secondDate" style='color:red'>Invalid date</span>
+</div>
+
+
+<!-- Fifth problem: Abbreviation -->
+<h2>#5: State Abbreviation</h2>
+<p>Please enter a 2-letter state abbreviation</p>
+
+<div>
+    <input type="text" oninput="validateState(this.value, 'firstState')" size="2"/> 
+    <span class="firstState" style='color:red'>Invalid state abbreviation</span>
+</div>
+<div>
+    <input type="text" oninput="validateState(this.value, 'secondState')" size="2"/>
+    <span class="secondState" style='color:red'>Invalid state abbreviation</span>
+</div>
+
+
+<!-- Sixth problem: Money  -->
+<h2>#6: Dollar Amount</h2>
+<p>Please enter an amount in US dollars</p>
+
+<div>
+    <input type="text" oninput="validateDollar(this.value, 'firstDollar')" size="10"/>
+    <span class="firstDollar" style='color:red'>Invalid money amount</span>
+</div>
+<div>
+    <input type="text" oninput="validateDollar(this.value, 'secondDollar')" size="10"/>
+    <span class="secondDollar" style='color:red'>Invalid money amount</span>
+</div>
+ 
+</body>
+</html>

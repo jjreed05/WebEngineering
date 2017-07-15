@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CS 213 Week 07 Ponder and Prove</title>
+	<script type="text/javascript" src="week07.js"></script>
+  <link rel="stylesheet" type="text/css" href="week07.css">
+
+</head>
+
+<body onload="alertUser()">
+
+<!--Title of the Page-->
+<div class="header">
+    <h1>Billing Information</h1>
+</div>
+
+<header>
+<!--Navigation Bar-->
+<div class="container">
+	<nav>
+	<ul>
+		<li><a>Home</a></li>
+    <li><a href="stub.html">Packages</a></li>
+    <li><a>Supplements</a></li>
+		<li><a>Contact us</a></li>
+	</ul>
+	</nav>
+</div>
+</header>
+     
+<div class="landmark">
+	<h4>    Home->Packages->Billing Information</h4>
+</div>
+     
+<div class="mainBody">
+<form onsubmit="submitForm()" onreset="resetForm()">
+
+  <!-- The User will select their package here -->
+  <h2>#1: Select your package</h2>
+  <h3><input type="radio" name="package" onclick="calculatePackage1()">Package 1: Pre-Workout</h3>
+  <ul>
+    <li>5 in 1 preworkout blend</li>
+    <li>Ultimate neurosensory & intense focus</li>
+    <li>Enhances muscle strength & recovery</li>
+    <li>Superior performance & pumps</li>
+    <li>Fruit punch flavor</li>
+    <li>30 Servings</li>
+    <li>$29.99 plus free shipping</li>
+  </ul>
+  <h3><input type="radio" name="package" onclick="calculatePackage2()">Package 2: Protein Powder</h3>
+  <ul>
+    <li>Subjects built 11 lbs. of mass & increased strength by 40%</li>
+    <li>Enhances muscle performance & recovery</li>
+    <li>Boosts testosterone and & ATP regeneration</li>
+    <li>Triple Chocolate Supreme</li>
+    <li>5 lbs.</li>
+    <li>$49.99 plus free shipping</li>
+  </ul>
+  <h3><input type="radio" name="package" onclick="calculatePackage3()">Package 3: Pre-Workout + Protein</h3>
+  <ul>
+    <li>Comes with Package 1 and Package 2</li>
+    <li>$59.99 plus free shipping</li>
+    <li>An $80 value</li>
+  </ul>
+
+  <!-- The user will type their name here-->
+	<h2>#2: Name</h2>
+	<p>Please enter your full name</p>
+      First name:<br>
+    <input type="text" name="firstname" onblur="validateName(this.value, 'firstName')">
+    <span class="firstName" style='color:yellow'>Please enter first name</span>
+    <br>
+      Last name:<br>
+    <input type="text" name="lastname" onblur="validateName(this.value, 'lastName')">
+    <span class="lastName" style='color:yellow'>Please enter last name</span>
+    <br>
+    
+   <!-- User's shipping address-->
+   <h2>#3: Address & Contact information</h2>
+   <p>Please specify the shipping address and your contact information</p>
+       Street Address:<br>
+     <input type="text" name="street" onblur="validateName(this.value, 'street')">
+     <span class="street" style='color:yellow'>Please enter a valid street</span>
+     <br>
+       City:<br>
+     <input type="text" name="city" onblur="validateName(this.value, 'city')">
+     <span class="city" style='color:yellow'>Please enter a valid city</span>
+     <br>
+       State:<br>
+     <input type="text" name="state" oninput="validateState(this.value, 'theState')">
+     <span class="theState" style='color:yellow'>Please enter a valid street</span>
+     <br>
+       Zip/Postal Code:<br>
+     <input type="text" name="zip" oninput="validateZip(this.value, 'postal')">
+     <span class="postal" style='color:yellow'>Please enter a valid zip code</span>
+     <br>
+       Phone:<br>
+     <input type="text" name="phone" oninput="validateNumber(this.value, 'number')">
+     <span class="number" style='color:yellow'>Please enter a valid phone number</span>
+     <br>
+       Email:<br>
+     <input type="text" name="email" oninput="validateEmail(this.value, 'theEmail')">
+     <span class="theEmail" style='color:yellow'>Please enter a valid email</span>
+     <br>
+   
+   <!-- Based on the package, it will total the cost-->  
+   <h2>#4: Total</h2>
+   <ul>
+     <li id="cost">Cost:</li>
+     <li>Shipping: $0.00</li>
+     <li id="tax">Tax:</li>
+     <li id="total">Total:</li>
+   </ul>
+   
+   <!-- Card information-->
+   <h2>#5: Payment</h2>
+   <p>Please enter the following payment information</p>
+     Credit Card Number:<br>
+   <input type="text" name="card" onblur="validateCard(this.value, 'cc')">
+   <span class="cc" style='color:yellow'>Please enter a valid card</span>
+   <br>
+     Expiration Date:<br>
+   <input type="text" name="month" onblur="validateMonth(this.value, 'theMonth')"> / 
+   <input type="text" name="year" oninput="validateYear(this.value, 'theYear')">
+   <br>
+   <span class="theMonth" style='color:yellow'>Please enter a valid month in MM format. </span>
+   <span class="theYear" style='color:yellow'>Please enter a valid year</span>
+   <br>
+   
+   <!-- Shipping Information-->
+   <h2>Shipping information</h2>
+   <p>Please allow 3-5 business days for all orders. For more information,
+   refer to the fedEX tracking email that will be sent to the email provided</p>
+   <br>
+   <input type="submit" value="Submit form">
+   <input type="reset" value="Reset form">
+    
+</form>
+   
+</div>
+</body>

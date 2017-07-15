@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!ELEMENT feed (news+)>
+<!ELEMENT news (title, link, author, published, category, summary)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT published (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT summary (#PCDATA)>

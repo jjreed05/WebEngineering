@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE feed SYSTEM "rss.dtd">
+<feed>
+	<news>
+		<title>Squirrel Creates Traffic Jam</title>
+		<link>www.inthenews.com/traffic/squirrel</link>
+		<author>Steve "The Reporter" Carson</author>
+		<published>June 9th, 2017</published>
+		<category>Traffic</category>
+		<summary>
+			On US-95 today, a squirrel leaped out across the road
+			and scared a driver out of his lane. That driver hits
+			another car which creates a 10 car pile-up including
+			a semi. No fatal injuries occured.
+		</summary>
+	</news>
+	<news>
+		<title>Weather Report</title>
+		<link>www.inthenews.com/weather</link>
+		<author>Chad Johnson</author>
+		<published>June 9th, 2017</published>
+		<category>Weather</category>
+		<summary>
+			Thunderstorms are expected to develop ahead of a cold 
+			front stretched across this region Tuesday afternoon. 
+			Conditions will be favorable for some of these storms 
+			to become severe. 
+		</summary>
+	</news>
+	<news>
+		<title>Las Vegas Raiders?</title>
+		<link>www.inthenews.com/sports/LasVegasRaiders</link>
+		<author>Leroy Sandoval</author>
+		<published>June 9th, 2017</published>
+		<category>Sports</category>
+		<summary>
+			The fans from Oakland demmands that the Oakland Raiders
+			change their name once they leave Oakland to Las Vegas.
+			The NFL has approved of the move from Oakland to Las Vegas,
+			and Nevada will fund 750 million dollars for a new stadium.
+		</summary>
+	</news>
+	
+</feed>

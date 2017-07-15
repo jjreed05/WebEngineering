@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bsa SYSTEM "BSA.dtd">
+<bsa>
+	<council name="North Star Council">
+		<troop number="422" name="Grand Teton">
+			<scout>
+				<firstname>Jonathan</firstname>
+				<lastname>Brown</lastname>
+				<address>
+					<street>312 21st Street</street>
+					<city>Las Vegas</city>
+					<state>Nevada</state>
+				</address>
+				<phone>702-123-4567</phone>
+				<rank date-earned="6/6/2016">Tenderfoot</rank>
+				<rank date-earned="7/17/2016">2nd Class</rank>
+				<meritbadge date-earned="6/10/2017">First Aid</meritbadge>
+				<meritbadge date-earned="6/15/2016">Painting</meritbadge>
+				<meritbadge date-earned="6/6/2016">Rifle Shooting</meritbadge>
+			</scout>
+			<scout>
+				<firstname>Walker</firstname>
+				<lastname>House</lastname>
+				<address>
+					<street>432 Turtle Rock Street</street>
+					<city>Las Vegas</city>
+					<state>Nevada</state>
+				</address>
+				<phone>702-877-1500</phone>
+				<rank date-earned="5/14/2015">Tenderfoot</rank>
+				<rank date-earned="6/15/2015">2nd Class</rank>
+				<rank date-earned="7/15/2015">1st Class</rank>
+				<rank date-earned="1/17/2016">Star</rank>
+				<rank date-earned="7/19/2016">Life</rank>
+				<rank date-earned="1/26/2017">Eagle</rank>
+				<meritbadge date-earned="5/17/2015">First Aid</meritbadge>
+				<meritbadge date-earned="5/17/2015">Swimming</meritbadge>
+				<meritbadge date-earned="5/17/2015">Citizenship in the Nation</meritbadge>
+				<meritbadge date-earned="5/17/2015">Citizenship in the World</meritbadge>
+				<meritbadge date-earned="5/17/2015">Citizenship in the Community</meritbadge>
+				<meritbadge date-earned="5/17/2015">Camping</meritbadge>
+			</scout>
+		</troop>
+		<troop number="413" name="Centennial">
+			<scout>
+				<firstname>Chris</firstname>
+				<lastname>Johnson</lastname>
+				<address>
+					<street>2145 Troy Avenue</street>
+					<city>Las Vegas</city>
+					<state>Nevada</state>
+				</address>
+				<phone>702-555-5555</phone>
+				<rank date-earned="2/2/2017">Tenderfoot</rank>
+				<rank date-earned="2/25/2017">2nd Class</rank>
+				<rank date-earned="3/16/2017">1st Class</rank>
+				<meritbadge date-earned="3/16/2017">Orienteering</meritbadge>
+				<meritbadge date-earned="3/16/2017">Crime Prevention</meritbadge>
+				<meritbadge date-earned="3/16/2017">Communication</meritbadge>
+			</scout>
+			<scout>
+				<firstname>Travis</firstname>
+				<lastname>Confer</lastname>
+				<address>
+					<street>7856 Wildebeest Court</street>
+					<city>Las Vegas</city>
+					<state>Nevada</state>
+				</address>
+				<phone>702-876-7878</phone>
+				<rank date-earned="1/24/2016">Tenderfoot</rank>
+				<rank date-earned="1/24/2016">2nd Class</rank>
+				<rank date-earned="1/24/2016">1st Class</rank>
+				<rank date-earned="7/17/2016">Star</rank>
+				<rank date-earned="1/19/2017">Life</rank>
+				<meritbadge date-earned="7/17/2016">Cooking</meritbadge>
+				<meritbadge date-earned="7/17/2016">Disabilities Awareness</meritbadge>
+				<meritbadge date-earned="7/17/2016">Environmental Science</meritbadge>
+				<meritbadge date-earned="1/19/2017">Family Life</meritbadge>
+				<meritbadge date-earned="1/19/2017">Citizenship in the Community</meritbadge>
+				<meritbadge date-earned="1/19/2017">Personal Fitness</meritbadge>
+			</scout>
+		</troop>
+	</council>
+	<council name="Boulder">
+		<troop number="567" name="Big Rock">
+			<scout>
+				<firstname>Brandon</firstname>
+				<lastname>Wilcox</lastname>
+				<address>
+					<street>106 N 1250 W</street>
+					<city>Clearfield</city>
+					<state>Utah</state>
+				</address>
+				<phone>801-425-6589</phone>
+				<rank date-earned="5/10/2017">Tenderfoot</rank>
+				<rank date-earned="5/10/2017">2nd Class</rank>
+				<meritbadge date-earned="5/10/2017">Cooking</meritbadge>
+				<meritbadge date-earned="5/10/2017">Plumbing</meritbadge>
+			</scout>
+			<scout>
+				<firstname>Corey</firstname>
+				<lastname>Covey</lastname>
+				<address>
+					<street>124 N 1250 W</street>
+					<city>Clearfield</city>
+					<state>Utah</state>
+				</address>
+				<phone>801-324-7894</phone>
+				<rank date-earned="6/10/2016">Tenderfoot</rank>
+				<rank date-earned="8/10/2016">2nd Class</rank>
+				<meritbadge date-earned="6/25/2016">Music</meritbadge>
+				<meritbadge date-earned="7/10/2016">Moviemaking</meritbadge>
+			</scout>
+		</troop>
+		<troop number="879" name="Mt. Ogden">
+			<scout>
+				<firstname>Joshua</firstname>
+				<lastname>Homestead</lastname>
+				<address>
+					<street>124 N 25th Street</street>
+					<city>Ogden</city>
+					<state>Utah</state>
+				</address>
+				<phone>801-412-7892</phone>
+				<rank date-earned="3/3/2017">Tenderfoot</rank>
+				<rank date-earned="4/3/2017">2nd Class</rank>
+				<meritbadge date-earned="4/1/2017">Personal Management</meritbadge>
+				<meritbadge date-earned="3/10/2017">Pioneering</meritbadge>
+			</scout>
+			<scout>
+				<firstname>Andrew</firstname>
+				<lastname>Hatch</lastname>
+				<address>
+					<street>138 N 24th Street</street>
+					<city>Ogden</city>
+					<state>Utah</state>
+				</address>
+				<phone>801-856-6397</phone>
+				<rank date-earned="6/10/2014">Tenderfoot</rank>
+				<rank date-earned="7/12/2014">2nd Class</rank>
+				<rank date-earned="7/12/2014">1st Class</rank>
+				<meritbadge date-earned="6/25/2014">Shotgun Shooting</meritbadge>
+				<meritbadge date-earned="7/10/2014">Wood Carving</meritbadge>
+			</scout>
+		</troop>
+	</council>
+</bsa>

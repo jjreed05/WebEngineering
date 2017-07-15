@@ -1,0 +1,140 @@
+/* Sets the container class' width */
+.container{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.leftColumn{
+  float: left;
+  width: 250px;
+  height: 1000px
+  background: black;
+}
+
+/* This will be our navigation bar */
+header{
+  background: #0A7BB3;
+  opacity: 0.8;
+  border: 2px solid;
+  border-radius: 25px;
+  color: white;
+}
+
+/* Organize the list on the navigation bar */
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* The logo in the navigation bar */
+.logo{
+  float: left;
+  padding: 10px 0;
+}
+
+/* nav to float left */
+nav{
+  float: left;
+}
+
+/* Take away the bullets */
+nav ul{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   
+}
+
+/* Position the lists */
+nav li{
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 40px; 
+  padding-top: 15px;
+}
+
+/* This is my first specification of a font size.
+   We will use this to edit the navigation bar*/
+nav ul li a{
+  color: white;
+  text-decoration: none;  
+  font-size: 18px;
+}
+
+/* Give the list items a dark tone when mouse is hovering */
+nav a:hover{
+   color: black;
+}
+
+/* The background of the webpage */
+body{
+  background-image: url("wallpaper.jpg"); 
+}
+
+/* Header 1 alignment */
+h1{
+  text-align: center;
+}
+
+/* Position h1 and h3 */
+h2, h3{
+  padding-left: 10px;
+}
+
+/* Position the paragraphs */
+p{
+  margin-right: 250px;
+  margin-left: 40px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* Position the building picture */
+#building{
+  padding: 25px;
+  margin-left: 100px;
+}
+
+/* Right side bar*/
+.sidebar{
+  background-color: #0A7BB3;
+  opacity: 0.8;
+  border: 2px solid;
+  border-radius: 25px;
+  margin-top: 20px;
+  height: auto;
+  float: right;
+  width: 260px;
+  color: white;
+}
+
+/* Image on the right */
+.imgBar{
+  border: 2px solid;
+  border-radius: 25px;
+  border-color: white;
+  margin-top: 20px;
+  height: auto;
+  float: right;
+  width: 260px;
+  clear: right;
+}
+
+/* Left side bar */
+.landmark{
+  background-color: #0A7BB3;
+  border: 2px solid;
+  border-radius: 25px;
+  border-color: white;
+  color: white;
+  opacity: 0.8;
+  margin-top: 20px;
+  float: left;
+  width: 160px;
+  height: 100vh;
+  clear: left;
+}
+
+
+  

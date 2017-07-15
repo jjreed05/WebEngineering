@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Comercial Site</title>
+     <link rel="stylesheet" type="text/css" href="PeaceDollar.css">
+     <style> 
+        /* Title style*/  
+        h1{
+          font-family: "Arial";
+          font-style: italic;
+        }
+        
+        /* h2 style*/
+        h2{
+          font-family: "Verdana";
+          font-style: oblique;
+        }
+        
+        /* list style*/
+        ul{
+          font-family: "Lucida Console";
+          font-style: normal;
+        }
+        
+        /* layout and design of paragraph*/
+        .para1{
+          margin-top: 20px;
+          background: #2A4C62;
+          opacity: 0.8;
+          color: white;
+          border: 2px solid;
+          border-radius: 25px;
+        }
+        
+        /* position of the form */
+        #form{
+          padding: 25px;
+          margin-left: 100px;
+          color: yellow;
+        }
+        
+        /* make the higlighted word stand out*/
+        #span{
+          color: yellow;
+          font-size: 18px;
+          font-style: oblique;
+        }
+     </style>
+   </head>
+   <body>
+   
+     <!--Title of the Web page-->
+     <h1>Peace Dollar Coins</h1>
+     
+     <!--Navigation Bar-->
+     <header>
+     <div class="container">
+       <img src="PD.jpg" alt="logo" class="logo" style="width:31.25px;height:28.8125px;">
+       <nav>
+       <ul>
+         <li><a href="stub.html">HOME</a></li>
+         <li><a href="SecondPage.html">CONTACT US</a></li>
+       </ul>
+       </nav>
+     </div>
+     </header>
+     
+     <!--Contact us-->
+     <div class="para1">
+       
+       <!--Inline style used here to transform text-->
+       <h2 style="text-transform:uppercase;">contact us</h2>
+       <p>Feel free to contact us anytime by calling our number: <span id="span">1-800-877-1500. </span>
+          If you want us to get in contact with you, feel free to fill out the form below. We will
+          call you the next buisness day during our hours of operation.
+       </p>
+       
+       <!--Gather User's Input-->
+       <form id="form">
+         Frist name:<br>
+         <input type="text" name="firstname">
+         <br>
+         Last name:<br>
+         <input type="text" name="lastname">
+         <br>
+         Phone number:<br>
+         <input type="text" name="phone"?
+         <br>
+         <input type="submit" value="Submit">
+       </form>
+       
+       <!--Another example of inline-->
+       <h3 style="font-family:"Lucida Console";>Hours of Operation:</h3>
+       <p>Our buisness hours are Monday through Friday from <span id="span">8:00pm to 5:00pm MT</span></p>
+     </div>   
+   </body>
+</html>

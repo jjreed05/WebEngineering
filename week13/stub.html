@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<head>
+	<title>Week 13: AngularJS Demo</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="week13.css">
+</head>
+
+<body>
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>AngularJS : Checklist Demo</b></h1>
+</header>
+
+<div class="w3-card-4 w3-margin w3-white">
+<div class="w3-container">
+	<img src="angular_js.jpg" style="width:25%"> 
+	<h2>Background on AngularJS</h2>
+	<p>
+	AngularJS was first introuduced in 2012. In 2009, two Google employees named Misko Hevery 
+	and Adam Abrons started to develop AngularJS as a side project. They envisioned their project 
+	to be an end to end tool that allowed web designers to interact with both the front-end and the 
+	back-end. Google ended up taking on AngularJS as a new project after Hevery 
+	show cased his project to his manager.AngularJS is a structural framework for dynamic web applications. 
+	It is primarily used for front-end web application framework. This framework is written in JavaScript. 
+	It is primarily a client-side web tool.
+	</p>
+</div>
+</div> 
+
+<div class="w3-card-4 w3-margin w3-white">
+<div class="w3-container">
+	<img src="check.jpg" style="width:5%">
+	<h2>This Assignment</h2>
+	<p>
+	In this assingment, I found out about AngularJS through the research that I did for the 
+	Week 13 discussion board. I decided that I wanted create a demonstration for it. So, I created
+	a checklist with AngularJS. I used an input box to get the user's input. It then takes that input and 
+	pushes it into a ul list of items. The user can then clear the checklist by clicking the 
+	checkbox near the item and clicking the completed button. Additionally, I created a stylesheet of my 
+	own and also used a template off of W3 Schools to try out.
+	</p>
+
+</div>
+</div>
+</div>
+
+<div class="w3-card-4 w3-margin w3-white">
+<div class="w3-container">
+	<h2>The Checklist</h2>
+	<p>
+	Enter the items that you need to get done into the input box. Click enter for each item.
+	</p>
+	<p>
+	If you want to clear the completed items, click the check box near the item and click the 
+	"Item Completed" button
+	</p> 
+	<br/>
+
+<div class="box" ng-app="myApp" ng-controller="personCtrl">
+	<h3 id="formHeader">Enter the items that you need to get done:</h3>
+	<br/>
+	<form name="frm" ng-submit="addTodo()">
+		<input id="myInput" type="text" name="newtodo" ng-model="newtodo" required/>
+		<button ng-disabled="frm.$invalid">Enter</button>
+	</form>
+	<br/>
+	<br/>
+	<h3>Things to Get Done:</h3>
+	<ul class="checklist">
+		<li ng-repeat="todo in todos">
+		<input type="checkbox" ng-model="todo.done"/>
+		<span ng-class="{'done':todo.done}">{{todo.title}}</span>
+		</li>
+	</ul>
+	<br/>
+	<br/>
+	<button ng-click="clearCompleted()">Clear Completed</button>
+	<br/>
+	<br/>
+
+</div>
+</div>
+</div>
+
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('personCtrl', function($scope) {
+    $scope.todos = [
+		{'title': 'Complete this checklist', 'done':false}
+	];
+	
+	$scope.addTodo = function(){
+		$scope.todos.push({'title': $scope.newtodo, 'done':false})
+		$scope.newtodo = ''
+	}
+	$scope.clearCompleted = function(){
+		$scope.todos = $scope.todos.filter(function(item){
+			return !item.done
+		})
+	}
+});
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,24 @@
+
+.done{
+	text-decoration: line-through; 
+	color: #ccc;
+}
+
+li{ 
+	list-style-type: none;
+}
+
+.box{
+	margin-left: 100px;
+	font-family: "Raleway", sans-serif;
+}
+
+#myInput{
+	margin-left: 85px;
+}
+
+.checklist{
+	margin-left: 50px;
+	color: #e51236;
+	font-size: 150%;
+}
